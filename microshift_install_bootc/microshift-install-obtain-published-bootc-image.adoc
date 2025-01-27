@@ -1,0 +1,24 @@
+:_mod-docs-content-type: ASSEMBLY
+[id="microshift-install-obtain-published-bootc-image"]
+include::_attributes/attributes-microshift.adoc[]
+= Obtaining the published bootc image
+:context: microshift-install-obtain-published-bootc-image
+
+toc::[]
+
+{microshift-short} is now built and published as image mode containers. use the following procedure to find and use these container images.
+
+.Procedure
+
+. You can find all the released {microshift-short} container images in the link link:https://catalog.redhat.com/[Red Hat Ecosystem Catalog].
+. Search for the {microshift-short} image by using the `MicroShift Bootc Image` keyword.
+. Open the container image page for the {microshift-short} bootc image.
+. See the tabs such as `Overview` and `Technical Information`, to get more details about the image.
+. Select the `Get this image` tab to see instructions for downloading the image.
+. Run the following commands to get access to the latest 4.18 image on x86_64 platform.
++
+[source,terminal]
+----
+podman login registry.redhat.io
+podman pull registry.redhat.io/microshift/microshift-bootc:4.18
+----

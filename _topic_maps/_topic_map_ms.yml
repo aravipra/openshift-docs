@@ -78,6 +78,14 @@ Distros: microshift
 Topics:
 - Name: Installing with RHEL image mode
   File: microshift-install-rhel-image-mode
+- Name: Obtaining the published bootc image
+  File: microshift-install-obtain-published-bootc-image
+- Name: Running the bootc image as a virtual Machine
+  File: microshift-install-running-bootc-image-in-VM
+- Name: Building bootc image
+  File: microshift-install-rhel-build-bootc-image
+- Name: Publishing the bootc image to the remote registry
+  File: microshift-install-rhel-publish-image-remote-registry
 ---
 Name: Updating
 Dir: microshift_updating

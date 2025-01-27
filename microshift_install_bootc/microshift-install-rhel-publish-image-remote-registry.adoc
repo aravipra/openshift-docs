@@ -1,0 +1,11 @@
+:_mod-docs-content-type: ASSEMBLY
+[id="microshift-install-rhel-publish-image-remote-registry"]
+include::_attributes/attributes-microshift.adoc[]
+= Publishing the bootc image to the remote registry
+:context: microshift-install-rhel-publish-image-remote-registry
+
+toc::[]
+
+You can publish the bootc image to the remote registry using the following procedure.
+
+include::modules/microshift-install-rhel-image-mode-publish-image.adoc[leveloffset=+1]

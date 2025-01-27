@@ -1,0 +1,11 @@
+:_mod-docs-content-type: ASSEMBLY
+[id="microshift-install-rhel-build-bootc-image"]
+include::_attributes/attributes-microshift.adoc[]
+= Creating a bootc image
+:context: microshift-install-rhel-build-bootc-image
+
+toc::[]
+
+You can build a {op-system-base-full} bootable container image with {microshift-short} using a container file. Use the following procedure to build the bootc image.
+
+include::modules/microshift-install-rhel-image-mode-build-image.adoc[leveloffset=+1]

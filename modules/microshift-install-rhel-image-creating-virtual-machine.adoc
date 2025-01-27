@@ -1,0 +1,47 @@
+// Module included in the following assemblies:
+//
+// microshift_install_bootc/microshift-install-running-bootc-image-in-VM.adoc
+
+:_mod-docs-content-type: PROCEDURE
+[id="microshift-install-rhel-image-creating-virtual-machine_{context}"]
+= Creating virtual machine
+
+.Procedure
+
+. Download a RHEL boot ISO image from https://developers.redhat.com/products/rhel/download.
+. Copy the downloaded file to the /var/lib/libvirt/images directory.
+. Run the following commands to create a RHEL virtual machine with 2 cores, 2GB of RAM and 20GB of storage:
++
+[source,terminal]
+----
+VMNAME=microshift-4.17-bootc
+NETNAME=default
+
+sudo virt-install \
+    --name ${VMNAME} \
+    --vcpus 2 \
+    --memory 2048 \
+    --disk path=/var/lib/libvirt/images/${VMNAME}.qcow2,size=20 \
+    --network network=${NETNAME},model=virtio \
+    --events on_reboot=restart \
+    --location /var/lib/libvirt/images/rhel-9.4-$(uname -m)-boot.iso \
+    --initrd-inject kickstart.ks \
+    --extra-args "inst.ks=file://kickstart.ks" \
+    --wait
+----
++
+[NOTE]
+====
+The command uses the kickstart file prepared in the previous step to pull a bootc image from the remote registry and use it to install the RHEL operating system.
+====
+. Log into the virtual machine using the redhat:<password> credentials.
+
+.Verification
+
+. Run the following command to verify that all the MicroShift pods are up and running without errors.
++
+[source,terminal]
+----
+watch sudo oc get pods -A \
+    --kubeconfig /var/lib/microshift/resources/kubeadmin/kubeconfig
+----

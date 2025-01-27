@@ -14,10 +14,6 @@ include::snippets/technology-preview.adoc[]
 
 include::modules/microshift-install-rhel-image-mode-conc.adoc[leveloffset=+1]
 
-include::modules/microshift-install-rhel-image-mode-build-image.adoc[leveloffset=+1]
-
-include::modules/microshift-install-rhel-image-mode-publish-image.adoc[leveloffset=+1]
-
 [id="_additional-resources_microshift-install-rhel-image-mode_{context}"]
 == Additional resources
 * link:https://developers.redhat.com/products/rhel-image-mode/getting-started[Image mode for Red Hat Enterprise Linux learning exercises]

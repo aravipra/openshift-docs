@@ -1,0 +1,10 @@
+:_mod-docs-content-type: ASSEMBLY
+[id="microshift-install-running-bootc-image-in-VM"]
+include::_attributes/attributes-microshift.adoc[]
+= Running the bootc image as a virtual Machine
+:context: microshift-install-running-bootc-image-in-VM
+
+toc::[]
+
+include::modules/microshift-install-rhel-image-prepare-kickstart.adoc[leveloffset=+1]
+include::modules/microshift-install-rhel-image-creating-virtual-machine.adoc[leveloffset=+1]
