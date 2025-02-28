@@ -15,9 +15,13 @@
 ^|*{microshift-short} Version*
 ^|*Supported {microshift-short} Version{nbsp}&#8594;{nbsp}Version Updates*
 
+^|9.6
+^|4.19
+^|4.19.0{nbsp}&#8594;{nbsp}4.19.z
+
 ^|9.4
 ^|4.18
-^|4.18.0{nbsp}&#8594;{nbsp}4.18.z
+^|4.18.0{nbsp}&#8594;{nbsp}4.18.z, 4.18{nbsp}&#8594;{nbsp}4.19
 
 ^|9.4
 ^|4.17
